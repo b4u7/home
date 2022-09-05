@@ -1,0 +1,77 @@
+{
+  // Window settings
+  "workbench.colorTheme": "Bearded Theme Arc",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.commandCenter": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.editor.enablePreview": false,
+  // "workbench.editor.showIcons": false,
+  // "workbench.editor.tabCloseButton": "off",
+  // "workbench.iconTheme": null,
+  "workbench.tree.indent": 24,
+  "workbench.tree.renderIndentGuides": "always", // "none"
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": true,
+
+  // Editor settings
+  "editor.colorDecorators": true,
+  "editor.cursorBlinking": "blink",
+  "editor.cursorStyle": "line",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.find.addExtraSpaceOnTop": false,
+  // "editor.fontFamily": "'IBM Plex Mono', monospace",
+  "editor.fontFamily": "JetBrains Mono, Cascadia Mono, Consolas, 'courier New', monoscape",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 2,
+  "editor.links": false,
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "none",
+  "editor.roundedSelection": true,
+  "editor.scrollbar.horizontal": "visible",
+  "editor.scrollbar.vertical": "visible",
+  "editor.selectionHighlight": false,
+  "editor.showFoldingControls": "always",
+  "editor.mouseWheelZoom": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.indentation": false,
+  // "editor.stickyScroll.enabled": true,
+  // "editor.formatOnSave": true,
+
+  // Terminal settings
+  // "terminal.integrated.fontFamily": "'IBM Plex Mono', monospace",
+  "terminal.integrated.fontFamily": "JetBrains Mono, Cascadia Mono, Consolas, 'courier New', monoscape",
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+
+  // Plugin settings & others
+  "powermode.enabled": false,
+  "powermode.shake.enabled": false,
+
+  // Attempt to use vim emulation
+  // Insert vim emulation plugin settings
+  
+  // Extensions and integrations 
+  "prettier.requireConfig": true,
+  "git.autofetch": true,
+  "githubPullRequests.pullBranch": "never",
+  // Settings per language
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, PointerAlignment: Right, BreakBeforeBraces: Allman, AllowShortFunctionsOnASingleLine: None }",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[html][scss][css][php][javascript][vue][typescript][json][jsonc][javascriptreact][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.tabSize": 4
+  },
+  "[scss][css][javascript][typescript][javascriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+}
