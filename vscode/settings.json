@@ -1,15 +1,21 @@
 {
   // Window settings
-  "workbench.colorTheme": "Bearded Theme Arc",
-  "workbench.iconTheme": "material-icon-theme",
-  "window.commandCenter": true,
   "window.menuBarVisibility": "compact",
+  "window.commandCenter": true,
+
+  // Workbench
   "workbench.editor.enablePreview": false,
-  // "workbench.editor.showIcons": false,
   // "workbench.editor.tabCloseButton": "off",
+  "workbench.colorTheme": "Bearded Theme Arc",
+  // "workbench.editor.showIcons": false,
   // "workbench.iconTheme": null,
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always", // "none"
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "right",
+
+  // Breadcrumbs
   "breadcrumbs.enabled": true,
   "breadcrumbs.icons": true,
 
@@ -18,6 +24,7 @@
   "editor.cursorBlinking": "blink",
   "editor.cursorStyle": "line",
   "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
   "editor.find.addExtraSpaceOnTop": false,
   // "editor.fontFamily": "'IBM Plex Mono', monospace",
   "editor.fontFamily": "JetBrains Mono, Cascadia Mono, Consolas, 'courier New', monoscape",
@@ -52,18 +59,23 @@
   "powermode.enabled": false,
   "powermode.shake.enabled": false,
 
-  // Attempt to use vim emulation
-  // Insert vim emulation plugin settings
-  
-  // Extensions and integrations 
-  "prettier.requireConfig": true,
+  // Integrations and Extensions
+  // Vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  // Prettier
+  "prettier.requireConfig": false,
+  // Git related
   "git.autofetch": true,
   "githubPullRequests.pullBranch": "never",
+
   // Settings per language
-  // CPP settings (because of cs50)
   "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, PointerAlignment: Right, BreakBeforeBraces: Allman, AllowShortFunctionsOnASingleLine: None }",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[html][scss][css][php][javascript][vue][typescript][json][jsonc][javascriptreact][typescriptreact]": {
+  "[html][scss][css][javascript][vue][typescript][json][jsonc][javascriptreact][typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
