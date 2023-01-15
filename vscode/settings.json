@@ -1,39 +1,35 @@
 {
   // Window settings
-  "window.menuBarVisibility": "compact",
   "window.commandCenter": true,
 
   // Workbench
-  "workbench.editor.enablePreview": false,
-  // "workbench.editor.tabCloseButton": "off",
-  "workbench.colorTheme": "Bearded Theme Arc",
+  "workbench.colorTheme": "Moonlight II",
   // "workbench.editor.showIcons": false,
-  // "workbench.iconTheme": null,
+  "breadcrumbs.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
+  "breadcrumbs.icons": true,
+  // "workbench.iconTheme": null,
+  "workbench.list.smoothScrolling": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.sideBar.location": "right",
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always", // "none"
-  "workbench.list.smoothScrolling": true,
-  "workbench.sideBar.location": "right",
-
-  // Breadcrumbs
-  "breadcrumbs.enabled": true,
-  "breadcrumbs.icons": true,
 
   // Editor settings
   "editor.colorDecorators": true,
-  "editor.cursorBlinking": "blink",
-  "editor.cursorStyle": "line",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.smoothScrolling": true,
   "editor.find.addExtraSpaceOnTop": false,
-  // "editor.fontFamily": "'IBM Plex Mono', monospace",
-  "editor.fontFamily": "JetBrains Mono, Cascadia Mono, Consolas, 'courier New', monoscape",
-  "editor.fontSize": 16,
-  "editor.fontWeight": "400",
+  "editor.fontFamily": "Jetbrains mono, Hack, IBM Plex Mono, Cascadia Mono, Consolas, 'courier New', monoscape",
   "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.guides.indentation": true,
+  "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 2,
   "editor.links": false,
   "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": false,
   "editor.occurrencesHighlight": false,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
@@ -42,49 +38,60 @@
   "editor.scrollbar.vertical": "visible",
   "editor.selectionHighlight": false,
   "editor.showFoldingControls": "always",
-  "editor.mouseWheelZoom": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.guides.indentation": false,
-  // "editor.stickyScroll.enabled": true,
+  "editor.smoothScrolling": true,
+  // "editor.cursorBlinking": "blink",
+  // "editor.cursorStyle": "line",
   // "editor.formatOnSave": true,
+  // "editor.stickyScroll.enabled": true,
 
   // Terminal settings
-  // "terminal.integrated.fontFamily": "'IBM Plex Mono', monospace",
-  "terminal.integrated.fontFamily": "JetBrains Mono, Cascadia Mono, Consolas, 'courier New', monoscape",
-  "terminal.integrated.fontWeight": "400",
-  "terminal.integrated.fontSize": 16,
   "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.fontFamily": "JetBrains Mono, Hack, IBM Plex Mono, Cascadia Mono, Consolas, 'courier New', monoscape",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "400",
 
-  // Plugin settings & others
-  "powermode.enabled": false,
-  "powermode.shake.enabled": false,
-
-  // Integrations and Extensions
-  // Vim
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  // Prettier
-  "prettier.requireConfig": false,
-  // Git related
+  // Git
   "git.autofetch": true,
   "githubPullRequests.pullBranch": "never",
 
-  // Settings per language
-  "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, PointerAlignment: Right, BreakBeforeBraces: Allman, AllowShortFunctionsOnASingleLine: None }",
+  // Plugin settings
+  // Vim
+  "vim.easymotion": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+
+  // Prettier
+  "prettier.requireConfig": false,
+
+  // vscode-pets
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.position": "explorer",
+  "vscode-pets.theme": "forest",
+
+  // Language settings
+  // Obey cs50 style guidelines
+  // "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, PointerAlignment: Right, BreakBeforeBraces: Allman, AllowShortFunctionsOnASingleLine: None }",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, AllowShortFunctionsOnASingleLine: None, PointerAlignment: Left }",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[html][scss][css][javascript][vue][typescript][json][jsonc][javascriptreact][typescriptreact]": {
+  "[html][css][scss][javascript][typescript][vue][javascriptreact][typescriptreact][json][jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.tabSize": 4
   },
-  "[scss][css][javascript][typescript][javascriptreact]": {
+  "[css][scss][javascript][typescript][vue][javascriptreact][typescriptreact][json]": {
     "editor.tabSize": 2
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "redhat.telemetry.enabled": true,
+  "workbench.editor.enablePreview": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
